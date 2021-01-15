@@ -31,10 +31,21 @@
       </p>
     </header>
 
-    <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
-      <input type="submit" value="Log in" />
+    <form action="friends.html" method="GET" id="login-form">
+      <input
+        name="username"
+        required
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        name="password"
+        required
+        minlength="10"
+        type="password"
+        placeholder="Password"
+      />
+      <input type="submit" value="Log In" />
       <a href="#">Find Kokoa Account or Password</a>
     </form>
     <script
